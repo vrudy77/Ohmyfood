@@ -97,8 +97,8 @@ p {
 
 .container-restaurant p {
   font-size: 1.5rem;
-  margin-left: 1em;
-  padding-bottom: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .container-restaurant {
@@ -120,6 +120,15 @@ p {
   margin: 0;
 }
 
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 1rem;
+}
+
 .restaurant-card-text {
   display: flex;
   justify-content: center;
@@ -129,13 +138,12 @@ p {
   margin-left: 1rem;
 }
 
-.container-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
-  margin: 1rem;
+h4 {
+  margin: 0;
+}
+
+.fa-regular {
+  margin: 0;
 }
 
 /****************************Footer***************************/
