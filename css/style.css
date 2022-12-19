@@ -1,14 +1,7 @@
 /* corp */
 
-
 body {
   font-family: "Roboto", sans-serif;
-}
-
-#h2 {
-  font-family: "Shrikhand";
-  margin: 1em 15% 0;
-  text-align: center;
 }
 
 /* logo */
@@ -17,6 +10,7 @@ header {
 display: flex;
 justify-content: center;
 }
+
 /* Search bar */
 
 .search {
@@ -43,49 +37,17 @@ input {
 }
 
 
-/* Navabar */
+/* Section description */
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-nav {
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Header */
-
-h2,
-h3 {
-  font-family: "Roboto";
-}
-
-h2 {
+.description h1 {
+  font-size: 1.5em;
   margin: 1em 15% 0;
   text-align: center;
 }
 
-.functioning p {
-  margin-left: 1em;
-  margin-top: 2em;
-}
-
-p {
+.description p {
   text-align: center;
   margin: 0 12%;
-}
-
-.maps {
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 50px;
 }
 
 .description {
@@ -94,11 +56,11 @@ p {
   justify-content: space-around;
   align-items: center;
   background-color: #f6f6f6;
-  height: 250px;
+  height: 290px;
 }
 
 .description button {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   background: linear-gradient(#ff79da, #9356DC);
   color: white;
   border-style: none;
@@ -108,17 +70,20 @@ p {
   margin-bottom: 2em;
 }
 
-.touch_menu {
-  background-color: #f6f6f6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 5%;
-  width: 90%;
-  height: 5em;
-  border-radius: 30px;
-  position: relative;
+/* Fonctionnement */
+
+.functioning li {
+background-color: #f6f6f6;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+gap: 5%;
+width: 90%;
+height: 5em;
+border-radius: 25px;
+position: relative;
+margin-top: 15px;
 }
 
 /****************************Main***************************/
@@ -148,6 +113,21 @@ p {
   margin: 0;
 }
 
+.restaurant-card img p {
+  width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #99e2d0;
+    color: #008766;
+}
+
 .container-card {
   display: flex;
   justify-content: center;
@@ -174,7 +154,7 @@ h4 {
   margin: 0;
 }
 
-/****************************Footer***************************/
+/* Footer */
 
 footer p {
   margin: 0;
