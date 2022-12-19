@@ -1,17 +1,49 @@
-/****************************Corps***************************/
+/* corp */
 
 
 body {
   font-family: "Roboto", sans-serif;
 }
 
-h2 {
+#h2 {
   font-family: "Shrikhand";
   margin: 1em 15% 0;
   text-align: center;
 }
 
-/****************************Navabar***************************/
+/* logo */
+
+header {
+display: flex;
+justify-content: center;
+}
+/* Search bar */
+
+.search {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: none;
+  background-color: #eaeaea;
+  text-align: center;
+  padding-left: 0;
+  height: 3em;
+}
+
+.fa-location-dot {
+  margin-right: 0;
+}
+
+
+/* Navabar */
 
 a {
   text-decoration: none;
@@ -25,11 +57,11 @@ nav {
   align-items: center;
 }
 
-/****************************Header***************************/
+/* Header */
 
 h2,
 h3 {
-  font-family: "Shrikhand";
+  font-family: "Roboto";
 }
 
 h2 {
@@ -54,10 +86,6 @@ p {
   align-items: center;
   flex-direction: row;
   height: 50px;
-}
-
-.fa-location-dot {
-  margin-right: 13px;
 }
 
 .description {
