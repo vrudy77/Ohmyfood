@@ -72,6 +72,12 @@ input {
 
 /* Fonctionnement */
 
+.fa-mobile-screen-button,
+.fa-bars,
+.fa-store {
+  color:#9356DC;
+}
+
 .functioning li {
 background-color: #f6f6f6;
 display: flex;
@@ -84,6 +90,19 @@ height: 5em;
 border-radius: 25px;
 position: relative;
 margin-top: 15px;
+}
+
+span {
+  width: 18px;
+  height: 18px;
+  padding: 4px 4px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: -4%;
 }
 
 /****************************Main***************************/
@@ -113,19 +132,12 @@ margin-top: 15px;
   margin: 0;
 }
 
-.restaurant-card img p {
-  width: 6rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 0;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    background-color: #99e2d0;
-    color: #008766;
+p.tag-card {
+  background-color: #99E2D0;
+  color: #1b6150;
+  border-radius: 0.125rem;
+  position: absolute;
+  right: 1.75rem;
 }
 
 .container-card {
