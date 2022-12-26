@@ -36,7 +36,6 @@ input {
   margin-right: 0;
 }
 
-
 /* Section description */
 
 .description h1 {
@@ -105,7 +104,7 @@ span {
   left: -4%;
 }
 
-/****************************Main***************************/
+/* Main */
 
 .container-restaurant p {
   font-size: 1.5rem;
