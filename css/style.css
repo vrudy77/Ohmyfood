@@ -119,6 +119,31 @@ span {
 
 /* Main */
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  margin: 0;
+}
+
+.card-restaurant {
+  margin: 0;
+  padding: 13px 0 0 0;
+  font-size: 1.1rem;
+  text-indent: 4%;
+  font-weight: 600;
+}
+
+.location-restaurant {
+  margin: 0;
+  padding: 5px 0 0 0;
+  text-indent: 4%;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
 .restaurant-title {
 padding: 0 0 10px 22px;
 }
@@ -143,15 +168,16 @@ figure, figcaption {
 }
 
 .container-card {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .restaurant-card {
   max-width: 330px;
-  min-width: 280px;
+  min-width: 300px;
   border-radius: 20px;
   background-color: white;
   margin-bottom: 18px;
@@ -166,6 +192,10 @@ justify-content: center;
   position: absolute;
   top: 0rem;
   right: 0.75rem;
+}
+
+.restaurant-card-text p {
+  margin: 0;
 }
 
 /* Footer */
