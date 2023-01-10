@@ -261,18 +261,63 @@ footer img {
 
 /* La pallette du gout */
 
-.menu-header {
-  height: 62px;
-  position: relative;
-  background: #FFF;
-  text-align: center;
+
+.streamer-menu img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
 }
 
-.streamer-menu {
-  width: 200px;
-  padding: 10px 0;
-  margin: 0 auto;
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: "Shrikhand", cursive;
+.entree_title_menu,
+.plat_title_menu,
+.dessert_title_menu {
+  align-content: start;
+  margin: 2rem 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.entree_container,
+.plat_container,
+.dessert_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.label_entree,
+.label_plat,
+.label_dessert {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 0;
+  border-radius: 25px;
+  width: 95%;
+  height: 6rem;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 1px #6e6e6e;
+  position: relative;
+}
+
+.button_commander {
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: linear-gradient(#fd6c9e, #7f00ff);
+  color: white;
+  border-style: none;
+  box-shadow: 0px 8px 12px 1px #6e6e6e;
+  min-width: 10rem;
+  max-width: 15rem;
+  width: 55%;
+  height: 3rem;
+  border-radius: 30px;
+  margin-bottom: 2em;
 }
