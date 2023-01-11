@@ -261,6 +261,17 @@ footer img {
 
 /* La pallette du gout */
 
+.entrees_name,
+.plat_name,
+.dessert_name {
+  margin: 10px;
+}
+
+.Accompagnement_entrees,
+.Accompagnement_plat,
+.Accompagnement_dessert {
+  margin: 10px;
+}
 
 .streamer-menu img {
   object-fit: cover;
