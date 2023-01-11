@@ -261,16 +261,36 @@ footer img {
 
 /* La pallette du gout */
 
+.custom-background{
+background-color: #f6f6f6;
+border-radius: 35px 35px 0 0;
+position: relative;
+}
+
 .entrees_name,
 .plat_name,
 .dessert_name {
+  font-size: 1.4em;
   margin: 10px;
+}
+
+.resto-name {
+  font-size: 2em;
+  font-weight: 200;
+  font-family: "Shrikhand", cursive;
+  margin-left: 40px;
+}
+
+.menu-container {
+  margin-bottom: 13px;
 }
 
 .Accompagnement_entrees,
 .Accompagnement_plat,
 .Accompagnement_dessert {
   margin: 10px;
+  font-size: 1.1em;
+  color: gray;
 }
 
 .streamer-menu img {
