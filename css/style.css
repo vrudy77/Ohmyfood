@@ -261,6 +261,13 @@ footer img {
 
 /* La pallette du gout */
 
+.menu-header img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .custom-background{
 background-color: #f6f6f6;
 border-radius: 35px 35px 0 0;
@@ -279,6 +286,11 @@ position: relative;
   font-weight: 200;
   font-family: "Shrikhand", cursive;
   margin-left: 40px;
+}
+
+.resto-name .fa-heart {
+  position: relative;
+  left: 265px;
 }
 
 .menu-container {
