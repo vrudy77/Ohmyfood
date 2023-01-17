@@ -11,11 +11,11 @@
 
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style">
     <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
-    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="preload" href="../css/style.css" as="style">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -74,10 +74,10 @@
             </section>
 
             <section>
-                <h2>Plats</h2>
-                <ul>
-                    <li>
-                        <div>
+                <h2 class="plat_title_menu">Plats</h2>
+                <ul class="plat_container">
+                    <li class="label_plat">
+                        <div class="menu-container">
                             <h3>Poulet rôti aux herbes de Provence</h3>
                             <p>Et sa crème de truffe</p>
                         </div>
@@ -110,32 +110,32 @@
             </section>
 
             <section>
-                <h2>Desserts</h2>
-                <ul>
-                    <li>
+                <h2 class="dessert_title_menu">Desserts</h2>
+                <ul class="dessert_container">
+                    <li class="label_dessert">
                         <div>
-                            <h3>Farandole de desserts</h3>
-                            <p>Du chef</p>
+                            <h3 class="dessert_name">Farandole de desserts</h3>
+                            <p class="Accompagnement_dessert">Du chef</p>
                         </div>
                         <div>
                             <b>18€</b>
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </li>
-                    <li>
+                    <li class="label_dessert">
                         <div>
-                            <h3>Crème brulée</h3> 
-                            <p>Revisitée</p>
+                            <h3 class="dessert_name">Crème brulée</h3> 
+                            <p class="Accompagnement_dessert">Revisitée</p>
                         </div>
                         <div>
                             <b>22€</b>
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </li>
-                    <li>
+                    <li class="label_dessert">
                         <div>
-                            <h3>Tiramisu </h3>
-                            <p>À la noisette</p>
+                            <h3 class="dessert_name">Tiramisu </h3>
+                            <p class="Accompagnement_dessert">À la noisette</p>
                         </div>
                         <div>
                             <b>23€</b>
@@ -146,7 +146,7 @@
             </section>
         </article>
 
-        <button type="button">
+        <button class="button_commander" type="button">
             Commander
         </button>
     </main>
