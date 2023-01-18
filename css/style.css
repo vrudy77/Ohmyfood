@@ -132,7 +132,7 @@ h3 {
   margin: 0;
 }
 
-.fa-heart {
+.container-restaurant .fa-heart {
   position: relative;
   left: 265px;
   bottom: 40px;
@@ -290,7 +290,7 @@ position: relative;
 
 .resto-name .fa-heart {
   position: relative;
-  left: 265px;
+  left: 10px;
 }
 
 .menu-container {
@@ -351,6 +351,14 @@ position: relative;
 }
 
 .button_commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+
+button {
   font-size: 0.9rem;
   font-weight: 600;
   background: linear-gradient(#fd6c9e, #7f00ff);

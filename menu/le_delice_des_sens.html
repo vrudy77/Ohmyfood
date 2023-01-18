@@ -22,48 +22,51 @@
 </head>
 
 <body>
-    <header>
+    <header class="menu-header">
         <a href="../index.html">
             <i class="fa-solid fa-arrow-left"></i>
             <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
         </a>
     </header>
 
-    <main>
-        <header>
+    <main class="custom-background">
+        <header class="streamer-menu">
             <img src="../images/restaurants/Le_delice_des_sens.jpg" alt="Le délice des sens">
         </header>
 
-        <article>
-                <h1>Le délice des sens<i class="fa-regular fa-heart"></i></h1>
+        <article class="custom-background">
+                <h1 class="resto-name">Le délice des sens</h1>
+                <a>
+                    <i class="fa-regular fa-heart"></i>
+                </a>
 
             <section>
-                <h2>Entrées</h2> 
-                <ul>
-                    <li>
-                        <div>
-                            <h3>Tartare de thon</h3>
-                            <p>Assaisonné au yuzu<p>
+                <h2 class="entree_title_menu">Entrées</h2> 
+                <ul class="entree_container">
+                    <li class="label_entree">
+                        <div class="menu-container">
+                            <h3 class="entrees_name">Tartare de thon</h3>
+                            <p class="Accompagnement_entrees">Assaisonné au yuzu<p>
                         </div>
                         <div>
                             <b>25€</b>
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <h3>Bouchée de homard croustillant</h3>
-                            <p>Et sa farandole de petits légumes</p>
+                    <li class="label_entree">
+                        <div class="menu-container">
+                            <h3 class="entrees_name">Bouchée de homard croustillant</h3>
+                            <p class="Accompagnement_entrees">Et sa farandole de petits légumes</p>
                         </div>
                         <div>
                             <b>35€</b>
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <h3>Velouté de cèpes </h3>
-                            <p>Aux truffes</p>
+                    <li class="label_entree">
+                        <div class="menu-container">
+                            <h3 class="entrees_name">Velouté de cèpes </h3>
+                            <p class="Accompagnement_entrees">Aux truffes</p>
                         </div>
                         <div>
                             <b>20€</b>
@@ -78,28 +81,28 @@
                 <ul class="plat_container">
                     <li class="label_plat">
                         <div class="menu-container">
-                            <h3>Poulet rôti aux herbes de Provence</h3>
-                            <p>Et sa crème de truffe</p>
+                            <h3 class="plat_name">Poulet rôti aux herbes de Provence</h3>
+                            <p class="Accompagnement_plat">Et sa crème de truffe</p>
                         </div>
                         <div>
                             <b>40€</b>
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <h3>Langouste rôtie</h3>
-                            <p>Et ses légumes de saison</p>
+                    <li class="label_plat">
+                        <div class="menu-container">
+                            <h3 class="plat_name">Langouste rôtie</h3>
+                            <p class="Accompagnement_plat">Et ses légumes de saison</p>
                         </div>
                         <div>
                             <b>35€</b>
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <h3>Côte de boeuf Angus</h3>
-                            <p>Et sa purée de panais</p>
+                    <li class="label_plat">
+                        <div class="menu-container">
+                            <h3 class="plat_name">Côte de boeuf Angus</h3>
+                            <p class="Accompagnement_plat">Et sa purée de panais</p>
                         </div>
                         <div>
                             <b>44€</strong></b>
@@ -113,7 +116,7 @@
                 <h2 class="dessert_title_menu">Desserts</h2>
                 <ul class="dessert_container">
                     <li class="label_dessert">
-                        <div>
+                        <div class="menu-container">
                             <h3 class="dessert_name">Farandole de desserts</h3>
                             <p class="Accompagnement_dessert">Du chef</p>
                         </div>
@@ -123,7 +126,7 @@
                         </div>
                     </li>
                     <li class="label_dessert">
-                        <div>
+                        <div class="menu-container">
                             <h3 class="dessert_name">Crème brulée</h3> 
                             <p class="Accompagnement_dessert">Revisitée</p>
                         </div>
@@ -133,7 +136,7 @@
                         </div>
                     </li>
                     <li class="label_dessert">
-                        <div>
+                        <div class="menu-container">
                             <h3 class="dessert_name">Tiramisu </h3>
                             <p class="Accompagnement_dessert">À la noisette</p>
                         </div>
@@ -146,9 +149,11 @@
             </section>
         </article>
 
-        <button class="button_commander" type="button">
-            Commander
-        </button>
+        <div class="button_commander">
+            <button  type="button">
+                Commander
+            </button>
+        </div>
     </main>
 
     <footer>
