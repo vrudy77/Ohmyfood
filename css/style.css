@@ -261,11 +261,27 @@ footer img {
 
 /* La pallette du gout */
 
-.menu-header img {
+.menu-header {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.menu-header img {
+  width: 155px;
+  padding: 20px 0;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 2rem;
+  height: 0;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom-background{
