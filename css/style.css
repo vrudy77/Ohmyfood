@@ -269,7 +269,7 @@ footer img {
 }
 
 .menu-header img {
-  width: 155px;
+  width: 220px;
   padding: 20px 0;
 }
 
@@ -289,7 +289,7 @@ footer img {
   margin-top: -27px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding: 36px 21px;
+  padding: 30px 15px 10px 15px;
   position: relative;
   z-index: 1;
 }
@@ -297,15 +297,15 @@ footer img {
 .entrees_name,
 .plat_name,
 .dessert_name {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 10px;
 }
 
 .resto-name {
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 200;
   font-family: "Shrikhand", cursive;
-  margin-left: 40px;
+  margin: 0;
 }
 
 .resto-name .fa-heart {
@@ -313,15 +313,11 @@ footer img {
   left: 10px;
 }
 
-.menu-container {
-  margin-bottom: 13px;
-}
-
 .Accompagnement_entrees,
 .Accompagnement_plat,
 .Accompagnement_dessert {
   margin: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
   color: gray;
 }
 
@@ -348,7 +344,7 @@ footer img {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   height: auto;
   padding: 1rem 0;
 }
@@ -361,9 +357,8 @@ footer img {
   align-items: flex-end;
   flex-direction: row;
   gap: 0;
-  border-radius: 25px;
+  border-radius: 15px;
   width: 95%;
-  height: 6rem;
   background-color: white;
   overflow: hidden;
   box-shadow: 0px 0px 5px 1px #6e6e6e;
@@ -371,11 +366,9 @@ footer img {
 }
 
 .button_commander {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
+  display: block;
+  margin: 0 auto 20px;
+  background-color: #F6F6F6;
 }
 
 button {
