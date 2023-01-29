@@ -2,7 +2,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #F6F6F6;
 }
 
 /* logo */
@@ -119,6 +118,10 @@ span {
 }
 
 /* Main */
+
+main {
+  background-color: #F6F6F6;
+}
 
 .container-restaurant h2 {
 margin-left: 10px;
@@ -369,7 +372,6 @@ footer img {
 .button_commander {
   display: block;
   margin: 0 auto 32px;
-  background-color: #F6F6F6;
 }
 
 button {
