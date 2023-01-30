@@ -119,10 +119,6 @@ span {
 
 /* Main */
 
-main {
-  background-color: #F6F6F6;
-}
-
 .container-restaurant h2 {
 margin-left: 10px;
 }
@@ -265,6 +261,10 @@ footer img {
 
 /* Style CSS fiche menu */
 
+.main-menu {
+  background-color: #F6F6F6;
+}
+
 .menu-header {
   display: flex;
   justify-content: center;
@@ -387,4 +387,43 @@ button {
   height: 3rem;
   border-radius: 30px;
   margin-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+
+h2 {
+  text-align: center;
+}
+
+/*number title fonctionnement*/
+span {
+  top: 33%;
+  left: -2%;
+}
+
+.functioning li {
+  width: 93%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+/* modification des propriété du titre H2 du contairer cartes restaurant*/
+
+.container-restaurant h2 {
+  margin-left: 0px;
+}
+
+.restaurant-title {
+  padding: unset;
+}
+
+/* Modification du container cartes des restarants*/
+.container-card {
+  justify-content: space-evenly;
+}
+
+.container-restaurant {
+  border-radius: 35px 35px 0 0;
+  position: relative;
+}
 }
