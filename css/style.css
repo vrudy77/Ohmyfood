@@ -263,6 +263,7 @@ footer img {
 
 .main-menu {
   background-color: #F6F6F6;
+  padding-bottom: 32px;
 }
 
 .menu-header {
@@ -371,7 +372,7 @@ footer img {
 
 .button_commander {
   display: block;
-  margin: 0 auto 32px;
+  margin: auto;
 }
 
 button {
