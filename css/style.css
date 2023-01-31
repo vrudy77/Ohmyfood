@@ -391,6 +391,8 @@ button {
 
 @media screen and (min-width: 768px) {
 
+/* Index*/
+
 h2 {
   text-align: center;
 }
@@ -425,5 +427,11 @@ span {
 .container-restaurant {
   border-radius: 35px 35px 0 0;
   position: relative;
+}
+
+/* Fiche Menu*/
+
+.resto-name .fa-heart {
+  left: 467px;
 }
 }
