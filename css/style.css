@@ -1,5 +1,12 @@
 /* corp */
 
+:root {
+  --white: #eaeaea;
+  --violet: #9356DC;
+  --silver: #f6f6f6;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -16,7 +23,7 @@ body {
 /* Search bar */
 
 .search {
-  background-color: #eaeaea;
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +40,7 @@ input {
   align-items: center;
   flex-direction: row;
   border: none;
-  background-color: #eaeaea;
+  background-color: var(--white);
   text-align: center;
   padding-left: 0;
   height: 3em;
@@ -61,13 +68,13 @@ input {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: var(--silver);
   height: 290px;
 }
 
 .description button {
   font-size: 0.9rem;
-  background: linear-gradient(#ff79da, #9356DC);
+  background: linear-gradient(#ff79da, var(--violet));
   color: white;
   border-style: none;
   width: 200px;
@@ -81,7 +88,7 @@ input {
 .fa-mobile-screen-button,
 .fa-bars,
 .fa-store {
-  color:#9356DC;
+  color:var(--violet);
 }
 
 .functioning-text {
@@ -90,7 +97,7 @@ input {
 }
 
 .functioning li {
-  background-color: #f6f6f6;
+  background-color: var(--silver);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +116,7 @@ span {
   height: 18px;
   padding: 4px 4px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color:var(--violet);
   color: #FFF;
   position: absolute;
   text-align: center;
@@ -160,7 +167,7 @@ h3 {
 
 .container-restaurant {
   padding: 20px 0 60px 0;
-  background-color: #f6f6f6;
+  background-color: var(--silver);
 }
 
 figure, figcaption {
@@ -398,7 +405,7 @@ h2 {
   text-align: center;
 }
 
-/*number title fonctionnement*/
+/* number title fonctionnement */
 span {
   top: 33%;
   left: -2%;
@@ -410,7 +417,7 @@ span {
   margin-bottom: 30px;
 }
 
-/* modification des propriété du titre H2 du contairer cartes restaurant*/
+/* modification des propriété du titre H2 du contairer cartes restaurant */
 
 .container-restaurant h2 {
   margin-left: 0px;
@@ -435,4 +442,20 @@ span {
 .resto-name .fa-heart {
   left: 467px;
 }
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+ul {
+  display: flex;
+  margin: auto;
+  gap: 30px;
+  padding: 0 40px 0 40px;
+}
+
 }
