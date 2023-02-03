@@ -321,8 +321,8 @@ footer img {
 }
 
 .resto-name .fa-heart {
-  position: relative;
-  left: 66px;
+  position: absolute;
+  right: 30px;
 }
 
 .Accompagnement_entrees,
