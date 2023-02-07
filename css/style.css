@@ -2,14 +2,66 @@
 
 :root {
   --white: #eaeaea;
-  --violet: #9356DC;
+  --primaire: #9356DC;
   --silver: #f6f6f6;
+  --secondaire: #ff79da;
+  --gris:#b4b4b4;
+  --tertiaire: #99E2D0;
 }
-
 
 body {
+  margin: 0;
+  padding: 0;;
   font-family: "Roboto", sans-serif;
+
 }
+
+/* loader */
+
+.lauch_loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--gris);
+  text-align: center;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  animation: Opacity 3s forwards;
+}
+
+@keyframes Opacity {
+  0% { opacity: 1;}
+  100% { opacity: 0; z-index: -10;}
+  }
+
+  .spin_loader {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  vertical-align: middle; /* alignement par rapport "Chargement Ohmyfood"*/
+  position: relative;
+  border-radius: 150px;
+  border: 3px solid rgba(255,255,255,0.4);
+  }
+
+  .spin_loader:after{
+  content:'';
+  position: absolute;
+  top:-6px;
+  left:-6px;
+  bottom:-6px;
+  right:-6px;
+  border-radius:120px;
+  border: 10px solid transparent;
+  border-top-color:#FFF;
+  animation: spin 1s linear 0s infinite;
+  }
+  
+  @keyframes spin {
+  0%{ transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+  }
 
 /* logo */
 
@@ -74,8 +126,8 @@ input {
 
 .description button {
   font-size: 0.9rem;
-  background: linear-gradient(#ff79da, var(--violet));
-  color: white;
+  background: linear-gradient(var(--secondaire), var(--primaire));
+  color: var(--white);
   border-style: none;
   width: 200px;
   height: 50px;
@@ -88,7 +140,7 @@ input {
 .fa-mobile-screen-button,
 .fa-bars,
 .fa-store {
-  color:var(--violet);
+  color:var(--primaire);
 }
 
 .functioning-text {
@@ -108,7 +160,7 @@ input {
   border-radius: 25px;
   position: relative;
   margin-top: 15px;
-  box-shadow: 0px 5px 10px 0px #b4b4b4;
+  box-shadow: 0px 5px 10px 0px var(--gris);
 }
 
 span {
@@ -116,8 +168,8 @@ span {
   height: 18px;
   padding: 4px 4px;
   border-radius: 50%;
-  background-color:var(--violet);
-  color: #FFF;
+  background-color:var(--primaire);
+  color: var(--white);
   position: absolute;
   text-align: center;
   top: 30%;
@@ -196,13 +248,13 @@ figure, figcaption {
   max-width: 330px;
   min-width: 300px;
   border-radius: 20px;
-  background-color: white;
+  background-color: var(--white);
   position: relative;
-  box-shadow: 0px 5px 10px 0px #b4b4b4;
+  box-shadow: 0px 5px 10px 0px var(--gris);
 }
 
 .container-restaurant .tag-card {
-  background-color: #99E2D0;
+  background-color: var(--tertiaire);
   color: #1b6150;
   padding: 0.5rem;
   border-radius: 0.125rem;
@@ -269,7 +321,7 @@ footer img {
 /* Style CSS fiche menu */
 
 .main-menu {
-  background-color: #F6F6F6;
+  background-color:var(--silver);
   padding-bottom: 32px;
 }
 
@@ -297,7 +349,7 @@ footer img {
 }
 
 .custom-background {
-  background-color: #F6F6F6;
+  background-color: var(--silver);
   margin-top: -27px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -371,7 +423,7 @@ footer img {
   gap: 0;
   border-radius: 15px;
   width: 100%;
-  background-color: white;
+  background-color: var(--white);
   overflow: hidden;
   box-shadow: 0px 0px 5px 1px #dfdfdf;
   position: relative;
@@ -386,7 +438,7 @@ button {
   font-size: 0.9rem;
   font-weight: 600;
   background: linear-gradient(#fd6c9e, #7f00ff);
-  color: white;
+  color: var(--white);;
   border-style: none;
   box-shadow: 0px 8px 12px 1px #6e6e6e;
   min-width: 10rem;
