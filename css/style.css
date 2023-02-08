@@ -22,8 +22,10 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--gris);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaire);
   left: 0;
   top: 0;
   z-index: 10000;
@@ -39,7 +41,7 @@ body {
   width: 120px;
   height: 120px;
   display: inline-block;
-  vertical-align: middle; /* alignement par rapport "Chargement Ohmyfood"*/
+  text-align: center;
   position: relative;
   border-radius: 150px;
   border: 3px solid rgba(255,255,255,0.4);
@@ -55,7 +57,7 @@ body {
   border-radius:120px;
   border: 10px solid transparent;
   border-top-color:#FFF;
-  animation: spin 1s linear 0s infinite;
+  animation: spin 3s linear 0s infinite;
   }
   
   @keyframes spin {
@@ -124,7 +126,7 @@ input {
   height: 290px;
 }
 
-.description button {
+.button_description {
   font-size: 0.9rem;
   background: linear-gradient(var(--secondaire), var(--primaire));
   color: var(--white);
@@ -133,6 +135,13 @@ input {
   height: 50px;
   border-radius: 35px;
   margin-bottom: 2em;
+}
+
+.button_description:hover,
+.button_commander:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 1rem 1rem 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Fonctionnement */
@@ -320,6 +329,23 @@ footer img {
 
 /* Style CSS fiche menu */
 
+.gradual_menu_entrees {
+  animation: gradual_animation 2s;
+}
+
+.gradual_menu_plats {
+  animation: gradual_animation 4s;
+}
+
+.gradual_menu_desserts {
+  animation: gradual_animation 6s;
+}
+
+@keyframes gradual_animation {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
 .main-menu {
   background-color:var(--silver);
   padding-bottom: 32px;
@@ -437,8 +463,8 @@ footer img {
 button {
   font-size: 0.9rem;
   font-weight: 600;
-  background: linear-gradient(#fd6c9e, #7f00ff);
-  color: var(--white);;
+  background: linear-gradient(var(--secondaire), var(--primaire));
+  color: var(--white);
   border-style: none;
   box-shadow: 0px 8px 12px 1px #6e6e6e;
   min-width: 10rem;
