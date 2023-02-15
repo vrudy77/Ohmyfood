@@ -5,15 +5,34 @@
   --primaire: #9356DC;
   --silver: #f6f6f6;
   --secondaire: #ff79da;
-  --gris:#b4b4b4;
+  --gris:#848484;
   --tertiaire: #99E2D0;
+}
+
+/*keyframe for Ohmyfood*/
+
+/*animation ligne 38*/
+@keyframes Opacity {
+  0% { opacity: 1;}
+  100% { opacity: 0; z-index: -10;}
+}
+
+/*animation ligne 64*/
+@keyframes spin {
+  0%{ transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+
+/*animation ligne 343*/
+@keyframes gradual_animation {
+  0% { opacity: 0;}
+  90% { opacity: 1;}
 }
 
 body {
   margin: 0;
   padding: 0;;
   font-family: "Roboto", sans-serif;
-
 }
 
 /* loader */
@@ -32,12 +51,7 @@ body {
   animation: Opacity 3s forwards;
 }
 
-@keyframes Opacity {
-  0% { opacity: 1;}
-  100% { opacity: 0; z-index: -10;}
-  }
-
-  .spin_loader {
+.spin_loader {
   width: 120px;
   height: 120px;
   display: inline-block;
@@ -45,9 +59,9 @@ body {
   position: relative;
   border-radius: 150px;
   border: 02px solid rgba(255, 255, 255, 0.4);
-  }
+}
 
-  .spin_loader:after{
+.spin_loader:after{
   content:'';
   position: absolute;
   top:-6px;
@@ -60,12 +74,7 @@ body {
   border-right: 10px solid var(--tertiaire);
   border-top: 10px solid var(--white);
   animation: spin 3s linear 0s infinite;
-  }
-  
-  @keyframes spin {
-  0%{ transform: rotate(0deg);}
-  100%{ transform: rotate(360deg);}
-  }
+}
 
 /* logo */
 
@@ -151,12 +160,17 @@ input {
 .fa-mobile-screen-button,
 .fa-bars,
 .fa-store {
-  color:var(--primaire);
+  color:var(--gris);
 }
 
 .functioning-text {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.functioning h2 {
+  margin-left: 32px;
+  font-size: 18px;
 }
 
 .functioning li {
@@ -202,16 +216,17 @@ h3 {
   margin: 0;
 }
 
-.container-restaurant .fa-heart {
+.container-restaurant .index-heart {
   position: relative;
-  left: 265px;
-  bottom: 40px;
+  left: 256px;
+  bottom: 44px;
+  font-size: 1.5em;
 }
 
 .card-restaurant {
   margin: 0;
   padding: 13px 0 0 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-indent: 4%;
   font-weight: 600;
 }
@@ -343,11 +358,6 @@ footer img {
   animation: gradual_animation 7s;
 }
 
-@keyframes gradual_animation {
-  0% { opacity: 0;}
-  90% { opacity: 1;}
-}
-
 .main-menu {
   background-color:var(--silver);
   padding-bottom: 32px;
@@ -459,7 +469,7 @@ footer img {
 
 .button_commander {
   display: block;
-  margin: auto;
+  margin: 10px auto 20px;
 }
 
 button {
@@ -524,7 +534,6 @@ span {
 }
 }
 
-
 @media screen and (min-width: 1200px) {
 
 ul {
@@ -533,7 +542,6 @@ ul {
   gap: 30px;
   padding: 0 40px 0 40px;
 }
-
 
 /* Fiche Menu*/
 
