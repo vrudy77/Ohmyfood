@@ -7,6 +7,7 @@
   --secondaire: #ff79da;
   --gris:#848484;
   --tertiaire: #99E2D0;
+  --violet:#d7bff5
 }
 
 /*keyframe for Ohmyfood*/
@@ -27,6 +28,24 @@
 @keyframes gradual_animation {
   0% { opacity: 0;}
   90% { opacity: 1;}
+}
+
+@keyframes heart-opacity {
+  0% { opacity: 0;}
+  50% { opacity: 0.5; background-image: linear-gradient(100deg, #9356DC, #FF79DA);}
+  100% { opacity: 1; background-image: linear-gradient(100deg, #9356DC, #FF79DA);}
+}
+
+@keyframes heart__empty__opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 body {
@@ -126,6 +145,7 @@ input {
 .description p {
   text-align: center;
   margin: 0 12%;
+  color: var(--gris);
 }
 
 .description {
@@ -188,6 +208,16 @@ input {
   box-shadow: 0px 5px 10px 0px var(--gris);
 }
 
+.choice:hover,
+.choice:focus {
+  background-color: var(--violet);
+}
+
+.choice:hover .fa-solid, 
+.choice:focus .fa-solid{
+  color: var(--primaire);
+}
+
 span {
   width: 18px;
   height: 18px;
@@ -222,6 +252,25 @@ h3 {
   bottom: 44px;
   font-size: 1.5em;
 }
+
+.container-restaurant .index-heart_one {
+  position: absolute;
+}
+
+.container-restaurant .index-heart:hover {
+  animation: heart__empty__opacity 1s;
+}
+
+.container-restaurant .index-heart:hover {
+  animation: heart-opacity 1s forwards;
+}
+
+
+
+
+
+
+
 
 .card-restaurant {
   margin: 0;
