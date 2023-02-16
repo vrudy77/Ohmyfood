@@ -3,49 +3,40 @@
 :root {
   --white: #eaeaea;
   --primaire: #9356DC;
-  --silver: #f6f6f6;
+  --silver: #F6F6F6;
   --secondaire: #ff79da;
   --gris:#848484;
   --tertiaire: #99E2D0;
-  --violet:#d7bff5
+  --violet:#ede4f8;
+  --green:#1b6150;
 }
 
 /*keyframe for Ohmyfood*/
 
-/*animation ligne 38*/
+/*animation ligne 38 - Opacité du fond d'écran*/
 @keyframes Opacity {
   0% { opacity: 1;}
   100% { opacity: 0; z-index: -10;}
 }
 
-/*animation ligne 64*/
+/*animation ligne 64* - loader*/
 @keyframes spin {
   0%{ transform: rotate(0deg);}
   100%{ transform: rotate(360deg);}
 }
 
-/*animation ligne 343*/
+/*animation ligne 343* - derouler du menu*/
 @keyframes gradual_animation {
   0% { opacity: 0;}
-  90% { opacity: 1;}
+  50% { opacity: 0.5;}
+  100% { opacity: 1;}
 }
 
+/*animation ligne 247* - animation coeur index*/
 @keyframes heart-opacity {
   0% { opacity: 0;}
-  50% { opacity: 0.5; background-image: linear-gradient(100deg, #9356DC, #FF79DA);}
-  100% { opacity: 1; background-image: linear-gradient(100deg, #9356DC, #FF79DA);}
-}
-
-@keyframes heart__empty__opacity {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  50% { opacity: 0.5; background-image: linear-gradient(100deg, var(--primaire), var(--secondaire));}
+  100% { opacity: 1; background-image: linear-gradient(100deg, var(--primaire), var(--secondaire));}
 }
 
 body {
@@ -250,27 +241,12 @@ h3 {
   position: relative;
   left: 256px;
   bottom: 44px;
-  font-size: 1.5em;
-}
-
-.container-restaurant .index-heart_one {
-  position: absolute;
+  font-size: 1.6em;
 }
 
 .container-restaurant .index-heart:hover {
-  animation: heart__empty__opacity 1s;
+  animation: heart-opacity 3s forwards;
 }
-
-.container-restaurant .index-heart:hover {
-  animation: heart-opacity 1s forwards;
-}
-
-
-
-
-
-
-
 
 .card-restaurant {
   margin: 0;
@@ -330,7 +306,7 @@ figure, figcaption {
 
 .container-restaurant .tag-card {
   background-color: var(--tertiaire);
-  color: #1b6150;
+  color: var(--green);
   padding: 0.5rem;
   border-radius: 0.125rem;
   position: absolute;
@@ -395,16 +371,26 @@ footer img {
 
 /* Style CSS fiche menu */
 
+.gradual_menu_entrees h2::after,
+.gradual_menu_plats h2::after,
+.gradual_menu_desserts h2::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #99E2D0;
+}
+
 .gradual_menu_entrees {
-  animation: gradual_animation 3s;
+  animation: gradual_animation 2s;
 }
 
 .gradual_menu_plats {
-  animation: gradual_animation 5s;
+  animation: gradual_animation 4s;
 }
 
 .gradual_menu_desserts {
-  animation: gradual_animation 7s;
+  animation: gradual_animation 6s;
 }
 
 .main-menu {
@@ -448,7 +434,7 @@ footer img {
 .entrees_name,
 .plat_name,
 .dessert_name {
-  font-size: 1.2em;
+  font-size: 16px;
   margin: 10px;
 }
 
@@ -510,7 +496,6 @@ footer img {
   gap: 0;
   border-radius: 15px;
   width: 100%;
-  background-color: var(--white);
   overflow: hidden;
   box-shadow: 0px 0px 5px 1px #dfdfdf;
   position: relative;
@@ -536,10 +521,12 @@ button {
   margin-bottom: 2em;
 }
 
+/*animation prix*/
+
+
 @media screen and (min-width: 768px) {
 
 /* Index*/
-
 h2 {
   text-align: center;
 }
