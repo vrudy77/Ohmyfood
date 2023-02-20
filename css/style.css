@@ -116,6 +116,7 @@ body {
 .search {
   width: 100%;
   height: 4em;
+  box-shadow: inset 0 8px 8px -3px var(--gris);
 }
 
 input {
@@ -127,7 +128,7 @@ input {
   background-color: var(--white);
   text-align: center;
   padding-left: 0;
-  height: 3em;
+  height: 2em;
 }
 
 .fa-location-dot {
@@ -253,7 +254,7 @@ h3 {
   font-size: 1.6em;
 }
 
-.container-restaurant .index-heart:hover {
+.container-restaurant .index-heart:hover { /*a retirer*/
   animation: heart-opacity 3s forwards;
 }
 
@@ -539,7 +540,7 @@ button {
 
 .custom-background b {
   padding-right: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 }
 
 .check-box {
@@ -636,8 +637,8 @@ ul {
 
 /* Fiche Menu*/
 
-.resto-name {
-  position: absolute;
+.label_entree, .label_plat, .label_dessert {
+  width: 115%;
 }
 
 .custom-background {
