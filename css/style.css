@@ -247,16 +247,39 @@ h3 {
   margin: 0;
 }
 
-.container-restaurant .index-heart {
-  position: relative;
-  left: 256px;
-  bottom: 44px;
-  font-size: 1.6em;
+/*animation coeur*/
+
+.fa-heart {
+  position: absolute;
+  font-size: 25px;
+  right: 20px; 
+  bottom: 20px;
+  cursor: pointer;
+  transition: all 800ms;
 }
 
-.container-restaurant .index-heart:hover { /*a retirer*/
-  animation: heart-opacity 3s forwards;
+.heart-invisible {
+  opacity: 0;
+  color: transparent;
+  transition: all 800ms;
 }
+
+.heart-invisible:hover {
+  opacity: 1;
+  transition: all 800ms;
+}
+
+.fa-heart:hover {
+  transform: scale(1.1);
+  transition: transform 800ms;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/*fin de l'animation*/
+
+
 
 .card-restaurant {
   margin: 0;
