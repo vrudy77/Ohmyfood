@@ -1,9 +1,9 @@
 /* corp */
 
 :root {
-  --white: #eaeaea;
+  --white: #FFFFFF;
   --primaire: #9356DC;
-  --silver: #F6F6F6;
+  --silver: #f7f3f3;
   --secondaire: #ff79da;
   --gris:#848484;
   --tertiaire: #99E2D0;
@@ -189,6 +189,11 @@ input {
   font-weight: 500;
 }
 
+.functioning {
+margin-top: 45px;
+margin-bottom: 55px;
+}
+
 .functioning h2 {
   margin-left: 32px;
   font-size: 18px;
@@ -200,10 +205,10 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 5%;
+  gap: 9%;
   width: 90%;
-  height: 5em;
-  border-radius: 25px;
+  height: 4em;
+  border-radius: 17px;
   position: relative;
   margin-top: 15px;
   box-shadow: 0px 5px 10px 0px var(--gris);
@@ -253,7 +258,7 @@ h3 {
   position: absolute;
   font-size: 25px;
   right: 20px; 
-  bottom: 20px;
+  bottom: 30px;
   cursor: pointer;
   transition: all 800ms;
 }
@@ -291,10 +296,11 @@ h3 {
 
 .location-restaurant {
   margin: 0;
-  padding: 5px 0 0 0;
+  padding: 5px 0 15px 0;
   text-indent: 4%;
   font-size: 1.05rem;
   font-weight: 300;
+  color: var(--gris);
 }
 
 .restaurant-title {
@@ -576,6 +582,8 @@ button {
   border-radius: 0 18px 18px 0;
   height: 100%;
   width: 62px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background-color: var(--tertiaire);
 }
 
