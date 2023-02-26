@@ -703,7 +703,6 @@ span {
 @media screen and (min-width: 1200px) {
 
 
-
 ul {
   display: flex;
   margin: auto;
@@ -713,8 +712,27 @@ ul {
 
 /* Fiche Menu*/
 
+.resto-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 1.3rem; 
+}
+
+.resto-name .heart-menu {
+  left: 50px;
+}
+
 .label_entree, .label_plat, .label_dessert {
   width: 90%;
+}
+
+.entree_title_menu,
+.plat_title_menu,
+.dessert_title_menu {
+text-align: unset;
+margin: 0 20px 0 20px;
 }
 
 .container-carte {
