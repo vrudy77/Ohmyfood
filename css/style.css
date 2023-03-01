@@ -449,7 +449,9 @@ footer img {
 
 .gradual_menu_entrees h2::after,
 .gradual_menu_plats h2::after,
-.gradual_menu_desserts h2::after{
+.gradual_menu_desserts h2::after,
+.gradual_menu_plats_La_note_enchantee h2::after,
+.gradual_menu_desserts_La_note_enchantee h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -461,11 +463,13 @@ footer img {
   animation: gradual_animation 2s;
 }
 
-.gradual_menu_plats {
+.gradual_menu_plats,
+.gradual_menu_plats_La_note_enchantee {
   animation: gradual_animation 4s;
 }
 
-.gradual_menu_desserts {
+.gradual_menu_desserts,
+.gradual_menu_desserts_La_note_enchantee {
   animation: gradual_animation 6s;
 }
 
@@ -682,6 +686,10 @@ span {
 
 /* Modification du container cartes des restarants*/
 
+.resto-name {
+margin: 0 110px;
+}
+
 .custom-background {
   background-color: var(--white);
   border-radius: 2rem 2rem 2rem 2rem;
@@ -706,7 +714,9 @@ span {
 
 .gradual_menu_entrees,
 .gradual_menu_plats,
-.gradual_menu_desserts {
+.gradual_menu_desserts,
+.gradual_menu_plats_La_note_enchantee,
+.gradual_menu_desserts_La_note_enchantee {
   width: 85%;
   margin: auto;
 }
@@ -729,7 +739,13 @@ footer ul {
   flex-direction: row;
   gap: 2rem;
   margin: auto;
-  } 
+  }
+
+.gradual_menu_plats_La_note_enchantee,
+.gradual_menu_desserts_La_note_enchantee {
+  margin-top: 0px;
+}
+
 
 }
 
@@ -757,7 +773,9 @@ ul {
 
 .gradual_menu_entrees,
 .gradual_menu_plats,
-.gradual_menu_desserts {
+.gradual_menu_desserts,
+.gradual_menu_plats_La_note_enchantee,
+.gradual_menu_desserts_La_note_enchantee {
   width: 30%;
 }
 
