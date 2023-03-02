@@ -774,7 +774,13 @@ footer ul {
 
 @media screen and (min-width: 1200px) { /*responsive desktop*/
 
-  .custom-background {
+.container-restaurant {
+  height: 700px;
+  width: 85%;
+}
+
+
+.custom-background {
   background-color: var(--white);
   border-radius: 2rem 2rem 2rem 2rem;
   margin-left: auto;
@@ -783,13 +789,25 @@ footer ul {
   max-width: 1440px;
   position: relative;
   width: 90%;
-  }
+}
 
 ul {
   display: flex;
   margin: auto;
   gap: 30px;
   padding: 0 40px 0 40px;
+}
+
+.container-card {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-card a {
+  width: 45%;
 }
 
 /* Fiche Menu*/
