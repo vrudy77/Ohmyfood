@@ -359,7 +359,6 @@ figure, figcaption {
 }
 
 .restaurant-card {
-  max-width: 330px;
   min-width: 300px;
   border-radius: 20px;
   background-color: var(--white);
@@ -674,14 +673,26 @@ span {
   margin-bottom: 30px;
 }
 
+.functioning ul {
+  padding-left: 60px;
+}
+
 /* modification des propriété du titre H2 du contairer cartes restaurant */
 
 .container-restaurant h2 {
-  margin-left: 0px;
+  margin-left: 30px;
 }
 
 .restaurant-title {
   padding: unset;
+}
+
+.card-restaurant {
+  font-size: 1.3rem;
+}
+
+.location-restaurant {
+  font-size: 1.3rem;
 }
 
 /* Modification du container cartes des restarants*/
@@ -702,11 +713,20 @@ margin: 0 110px;
 }
 
 .container-card {
-  display: contents;
+  display: flex;
 }
 
+.container-card a {
+    width: 90%;
+}
 .container-restaurant {
-  border-radius: 35px 35px 0 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 50px;
+  padding: 10px;
+  height: 1290px;
+  width: auto;
+  border-radius: 35px 35px 35px 35px;
   position: relative;
 }
 
@@ -741,11 +761,14 @@ footer ul {
   margin: auto;
   }
 
+.footer a {
+  font-size: 1.1rem;
+}
+
 .gradual_menu_plats_La_note_enchantee,
 .gradual_menu_desserts_La_note_enchantee {
   margin-top: 0px;
 }
-
 
 }
 
