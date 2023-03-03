@@ -698,7 +698,8 @@ span {
 /* Modification du container cartes des restarants*/
 
 .resto-name {
-margin: 0 110px;
+  margin: 0 110px;
+  text-align: center;
 }
 
 .custom-background {
