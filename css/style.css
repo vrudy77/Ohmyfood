@@ -16,6 +16,7 @@
 /*animation ligne 38 - Opacité du fond d'écran*/
 @keyframes Opacity {
   0% { opacity: 1;}
+  30% { opacity: 1;}
   100% { opacity: 0; z-index: -10;}
 }
 
@@ -49,7 +50,8 @@
 }
 
 body {
-  margin: 0;
+  max-width: 1600 px;
+  margin: auto;
   padding: 0;;
   font-family: "Roboto", sans-serif;
 }
@@ -238,6 +240,10 @@ span {
 }
 
 /* Main */
+
+.container-card a {
+  width: 90%;
+}
 
 .container-restaurant h2 {
 margin-left: 10px;
@@ -632,23 +638,19 @@ button {
   color: #fff;
 }
 
-.custom-background li:active .check-box {
+.label_entree:hover > .check-box,
+.label_plat:hover > .check-box,
+.label_dessert:hover > .check-box {
   transition: all 700ms ease;
   transform: translateX(-80px);
+  width: 150px;
 }
 
-.custom-background li:active i {
-  transition: all 700ms ease;
+.label_entree:hover > .check-box > i,
+.label_plat:hover > .check-box > i,
+.label_dessert:hover > .check-box > i {
+  transition: all 900ms ease;
   transform: rotate(1turn);
-}
-
-.custom-background li:active b {
-  transition: all 700ms ease;
-  transform: translate(-50px);
-}
-
-.custom-background li:active .text_menu {
-  animation: elipse 500ms ease forwards;
 }
 
 @media screen and (min-width: 768px) {
