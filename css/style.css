@@ -29,7 +29,7 @@
 /*animation ligne 343* - derouler du menu*/
 @keyframes gradual_animation {
   0% { opacity: 0;}
-  50% { opacity: 0.5;}
+  70% { opacity: 0.5;}
   100% { opacity: 1;}
 }
 
@@ -41,16 +41,12 @@
 }
 
 @keyframes elipse {
-  0% {
-    width: 90%;
-  }
-  100% {
-    width: 60%;
-  }
+  0% { width: 90%;}
+  100% {width: 60%;}
 }
 
 body {
-  max-width: 1600 px;
+  max-width: 1900px;
   margin: auto;
   padding: 0;;
   font-family: "Roboto", sans-serif;
@@ -266,30 +262,25 @@ h3 {
   right: 20px; 
   bottom: 30px;
   cursor: pointer;
-  transition: all 500ms;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
 }
 
 .heart-invisible {
   opacity: 0;
   color: transparent;
-  transition: all 500ms;
 }
 
 .heart-invisible:hover {
   opacity: 1;
-  transition: all 500ms;
 }
 
 .fa-heart:hover {
   transform: scale(1.1);
-  transition: transform 500ms;
   background-image: linear-gradient(#FF79DA,#9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-}
-
-#menu-container:hover > .check-box > i {
-  transform: rotate(360deg);
+  transition: transform 50s;
 }
 
 /*tronquer texte*/
@@ -439,6 +430,11 @@ footer img {
 
 /* CSS pour les 4 fiches "menu" */
 
+.container-carte {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
 .menu-container {
   margin-top: 15px;
 }
@@ -450,7 +446,6 @@ footer img {
 .custom-background li{
   cursor: pointer;
 }
-
 
 .gradual_menu_entrees h2::after,
 .gradual_menu_plats h2::after,
@@ -465,17 +460,17 @@ footer img {
 }
 
 .gradual_menu_entrees {
-  animation: gradual_animation 2s;
+  animation: gradual_animation 2s; 
 }
 
 .gradual_menu_plats,
 .gradual_menu_plats_La_note_enchantee {
-  animation: gradual_animation 4s;
+  animation: gradual_animation 6s;
 }
 
 .gradual_menu_desserts,
 .gradual_menu_desserts_La_note_enchantee {
-  animation: gradual_animation 6s;
+  animation: gradual_animation 10s;
 }
 
 .main-menu {
@@ -519,7 +514,7 @@ footer img {
 .entrees_name,
 .plat_name,
 .dessert_name {
-  font-size: 16px;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -540,7 +535,7 @@ footer img {
 .Accompagnement_plat,
 .Accompagnement_dessert {
   margin: 0px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #4a4949;
 }
 
@@ -554,6 +549,7 @@ footer img {
 .entree_title_menu,
 .plat_title_menu,
 .dessert_title_menu {
+  font-size: 1.2em;
   align-content: start;
   margin: 2rem 0 0 0;
   display: flex;
