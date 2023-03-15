@@ -254,56 +254,33 @@ h3 {
   margin: 0;
 }
 
-/*animation de l'index du coeur*/
+/*animation coeur*/
 
-.heart-index .fa-heart {
+.fa-heart {
   position: absolute;
   font-size: 25px;
   right: 20px; 
   bottom: 30px;
   cursor: pointer;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
 }
 
-.heart-index .heart-invisible {
+.heart-invisible {
   opacity: 0;
   color: transparent;
 }
 
-.heart-index .heart-invisible:hover {
+.heart-invisible:hover {
   opacity: 1;
 }
 
-.heart-index .fa-heart:hover {
-  color: var(--primaire);
+.fa-heart:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(#FF79DA,#9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: color 1s;
-}
-
-/*animation des coeurs des fiches menus*/
-
-.heart-menu .fa-heart {
-  position: absolute;
-  font-size: 25px;
-  right: 300px; 
-  bottom: 27px;
-  cursor: pointer;
-}
-
-.heart-menu .heart-invisible {
-  opacity: 0;
-  color: transparent;
-}
-
-.heart-menu .heart-invisible:hover {
-  opacity: 1;
-}
-
-.heart-menu .fa-heart:hover {
-  color: var(--secondaire);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: color 1s;
+  transition: transform 50s;
 }
 
 /*tronquer texte*/
@@ -452,15 +429,6 @@ footer img {
 }
 
 /* CSS pour les 4 fiches "menu" */
-
-.heart-menu {
-  position: relative;
-}
-
-.heart-menu .fa-heart {
-  right: 10px;
-  bottom: 6px;
-}
 
 .container-carte {
   margin-left: 7px;
@@ -683,15 +651,6 @@ button {
 
 @media screen and (min-width: 768px) {
 
-.heart-menu {
-  position: relative;
-}
-
-.heart-menu .fa-heart {
-  right: 100px;
-  bottom: 7px;
-}
-
 /* Index*/
 
 .entree_title_menu,
@@ -858,10 +817,6 @@ footer ul {
 
 .container-card a {
   width: 45%;
-}
-
-.heart-menu {
-  position: relative;
 }
 
 /* Fiche Menu*/
