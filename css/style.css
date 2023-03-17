@@ -86,10 +86,9 @@ body {
   bottom:-6px;
   right:-6px;
   border-radius:120px;
-  border: 10px solid var(--primaire);
-  border-bottom: 10px solid var(--secondaire);
-  border-right: 10px solid var(--tertiaire);
-  border-top: 10px solid var(--white);
+  border: 10px solid var(--silver);
+  border-bottom: 10px solid var(--primaire);
+  border-top: 10px solid var(--secondaire);
   animation: spin 3s linear 0s infinite;
 }
 
@@ -215,6 +214,7 @@ margin-bottom: 55px;
 .choice:hover,
 .choice:focus {
   background-color: var(--violet);
+  cursor: not-allowed;
 }
 
 .choice:hover .fa-solid, 
@@ -254,33 +254,56 @@ h3 {
   margin: 0;
 }
 
-/*animation coeur*/
+/*animation de l'index du coeur*/
 
-.fa-heart {
+.heart-index .fa-heart {
   position: absolute;
   font-size: 25px;
   right: 20px; 
   bottom: 30px;
   cursor: pointer;
-  -webkit-transition: all 800ms;
-  transition: all 800ms;
 }
 
-.heart-invisible {
+.heart-index .heart-invisible {
   opacity: 0;
   color: transparent;
 }
 
-.heart-invisible:hover {
+.heart-index .heart-invisible:hover {
   opacity: 1;
 }
 
-.fa-heart:hover {
-  transform: scale(1.1);
-  background-image: linear-gradient(#FF79DA,#9356DC);
+.heart-index .fa-heart:hover {
+  color: var(--primaire);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: transform 50s;
+  transition: color 1s;
+}
+
+/*animation des coeurs des fiches menus*/
+
+.heart-menu .fa-heart {
+  position: absolute;
+  font-size: 25px;
+  right: 300px; 
+  bottom: 27px;
+  cursor: pointer;
+}
+
+.heart-menu .heart-invisible {
+  opacity: 0;
+  color: transparent;
+}
+
+.heart-menu .heart-invisible:hover {
+  opacity: 1;
+}
+
+.heart-menu .fa-heart:hover {
+  color: var(--secondaire);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 1s;
 }
 
 /*tronquer texte*/
@@ -408,12 +431,12 @@ footer li {
   align-items: flex-start;
   flex-direction: row;
   gap: 0.5rem;
-  color: white;
+  color:var(--white);
   margin-left: 1rem;
 }
 
 footer a {
-  color: white;
+  color: var(--white);
 }
 
 .fa-utensils  {
@@ -429,6 +452,19 @@ footer img {
 }
 
 /* CSS pour les 4 fiches "menu" */
+
+/*position du coeur par rapport au titre*/
+
+.heart-menu {
+  position: relative;
+}
+
+.heart-menu .fa-heart {
+  right: 10px;
+  bottom: 6px;
+}
+
+/*position du coeur par rapport au titre - Fin*/
 
 .container-carte {
   margin-left: 7px;
@@ -454,9 +490,9 @@ footer img {
 .gradual_menu_desserts_La_note_enchantee h2::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 48px;
   height: 3px;
-  background: #99E2D0;
+  background: var(--tertiaire);
 }
 
 .gradual_menu_entrees {
@@ -631,7 +667,7 @@ button {
 
 .fa-circle-check {
   font-size: 30px;
-  color: #fff;
+  color: var(--white);
 }
 
 .label_entree:hover > .check-box,
@@ -649,7 +685,18 @@ button {
   transform: rotate(1turn);
 }
 
+/*animation check-box - Fin*/
+
 @media screen and (min-width: 768px) {
+
+.heart-menu {
+  position: relative;
+}
+
+.heart-menu .fa-heart {
+  right: 100px;
+  bottom: 7px;
+}
 
 /* Index*/
 
@@ -768,7 +815,6 @@ footer ul {
 .gradual_menu_desserts_La_note_enchantee {
   margin-top: 0px;
 }
-
 }
 
 @media screen and (min-width: 1200px) { /*responsive desktop*/
@@ -819,7 +865,16 @@ footer ul {
   width: 45%;
 }
 
+.heart-menu {
+  position: relative;
+}
+
 /* Fiche Menu*/
+
+.heart-menu .fa-heart {
+  right: 40px;
+  bottom: 26px;
+}
 
 .gradual_menu_entrees,
 .gradual_menu_plats,
