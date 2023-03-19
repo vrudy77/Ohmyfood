@@ -29,7 +29,7 @@
 /*animation ligne 343* - derouler du menu*/
 @keyframes gradual_animation {
   0% { opacity: 0;}
-  70% { opacity: 0.5;}
+
   100% { opacity: 1;}
 }
 
@@ -242,7 +242,7 @@ span {
 }
 
 .container-restaurant h2 {
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 a {
@@ -496,17 +496,17 @@ footer img {
 }
 
 .gradual_menu_entrees {
-  animation: gradual_animation 2s; 
+  animation: gradual_animation 2s ease-in-out both; 
 }
 
 .gradual_menu_plats,
 .gradual_menu_plats_La_note_enchantee {
-  animation: gradual_animation 6s;
+  animation: gradual_animation 2s 1s ease-in-out both;
 }
 
 .gradual_menu_desserts,
 .gradual_menu_desserts_La_note_enchantee {
-  animation: gradual_animation 10s;
+  animation: gradual_animation 2s 2s ease-in-out both;
 }
 
 .main-menu {
@@ -683,9 +683,7 @@ button {
 .label_dessert:hover > .check-box > i {
   transition: all 900ms ease;
   transform: rotate(1turn);
-}
-
-/*animation check-box - Fin*/
+} /*animation check-box - Fin*/
 
 @media screen and (min-width: 768px) {
 
@@ -699,12 +697,6 @@ button {
 }
 
 /* Index*/
-
-.entree_title_menu,
-.plat_title_menu,
-.dessert_title_menu {
-  text-align: none;
-}
 
 /* number title fonctionnement */
 span {
