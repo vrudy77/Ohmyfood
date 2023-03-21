@@ -9,31 +9,32 @@
   --tertiaire: #99E2D0;
   --violet:#ede4f8;
   --green:#1b6150;
+  --noir:#000000;
+  --grisfonce:#272727;
 }
 
 /*keyframe for Ohmyfood*/
 
-/*animation ligne 38 - Opacité du fond d'écran*/
+/* animation Opacité du fond d'écran */
 @keyframes Opacity {
   0% { opacity: 1;}
   30% { opacity: 1;}
   100% { opacity: 0; z-index: -10;}
 }
 
-/*animation ligne 64* - loader*/
+/* animation loader spinner */
 @keyframes spin {
   0%{ transform: rotate(0deg);}
   100%{ transform: rotate(360deg);}
 }
 
-/*animation ligne 343* - derouler du menu*/
+/* animation derouler du menu */
 @keyframes gradual_animation {
   0% { opacity: 0;}
-
   100% { opacity: 1;}
 }
 
-/*animation ligne 247* - animation coeur index*/
+/* animation coeur index */
 @keyframes heart-opacity {
   0% { opacity: 0;}
   50% { opacity: 0.5; background-image: linear-gradient(100deg, var(--primaire), var(--secondaire));}
@@ -52,7 +53,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* loader */
+/* loader spinner */
 
 .lauch_loader {
   width: 100%;
@@ -132,7 +133,7 @@ input {
   margin-right: 0;
 }
 
-/* Section description */
+/* Section description de l'entreprise */
 
 .description h1 {
   font-size: 1.5em;
@@ -187,8 +188,8 @@ input {
 }
 
 .functioning {
-margin-top: 45px;
-margin-bottom: 55px;
+  margin-top: 45px;
+  margin-bottom: 55px;
 }
 
 .functioning h2 {
@@ -214,7 +215,7 @@ margin-bottom: 55px;
 .choice:hover,
 .choice:focus {
   background-color: var(--violet);
-  cursor: not-allowed;
+  cursor: not-allowed; /*curseur en forme de rond barré*/
 }
 
 .choice:hover .fa-solid, 
@@ -254,7 +255,7 @@ h3 {
   margin: 0;
 }
 
-/*animation de l'index du coeur*/
+/*animation des coeurs dans la page d'accueil*/
 
 .heart-index .fa-heart {
   position: absolute;
@@ -269,7 +270,7 @@ h3 {
   color: transparent;
 }
 
-.heart-index .heart-invisible:hover {
+.heart-index .heart-invisible:active {
   opacity: 1;
 }
 
@@ -306,7 +307,7 @@ h3 {
   transition: color 1s;
 }
 
-/*tronquer texte*/
+/*texte tronqué dans les onglets des menus*/
 
 .menu-container {
   width: 100%;
@@ -326,9 +327,7 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-/*fin de l'animation*/
+} /*fin de l'animation*/
 
 .card-restaurant {
   margin: 0;
@@ -396,11 +395,7 @@ figure, figcaption {
   right: 0.75rem;
 }
 
-.restaurant-card-text p {
-  margin: 0;
-}
-
-/* Footer */
+/* Footer général */
 
 footer p {
   margin: 0;
@@ -412,7 +407,7 @@ footer {
   align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: #353535;
+  background-color: var(--grisfonce);
   padding: 30px 0 30px;
 }
 
@@ -454,7 +449,6 @@ footer img {
 /* CSS pour les 4 fiches "menu" */
 
 /*position du coeur par rapport au titre*/
-
 .heart-menu {
   position: relative;
 }
@@ -463,7 +457,6 @@ footer img {
   right: 10px;
   bottom: 6px;
 }
-
 /*position du coeur par rapport au titre - Fin*/
 
 .container-carte {
@@ -483,6 +476,7 @@ footer img {
   cursor: pointer;
 }
 
+/*Décalage progressif des menus avec un léger décalage de temps*/
 .gradual_menu_entrees h2::after,
 .gradual_menu_plats h2::after,
 .gradual_menu_desserts h2::after,
@@ -507,7 +501,7 @@ footer img {
 .gradual_menu_desserts,
 .gradual_menu_desserts_La_note_enchantee {
   animation: gradual_animation 2s 2s ease-in-out both;
-}
+}/*Fin du décalage progressif des menus*/
 
 .main-menu {
   background-color:var(--silver);
@@ -572,7 +566,7 @@ footer img {
 .Accompagnement_dessert {
   margin: 0px;
   font-size: 0.8em;
-  color: #4a4949;
+  color: var(--grisfonce);
 }
 
 .streamer-menu img {
@@ -618,7 +612,6 @@ footer img {
   overflow: hidden;
 }
 
-
 .button_commander {
   display: block;
   margin: 10px auto 20px;
@@ -630,7 +623,7 @@ button {
   background: linear-gradient(var(--secondaire), var(--primaire));
   color: var(--white);
   border-style: none;
-  box-shadow: 0px 8px 12px 1px #6e6e6e;
+  box-shadow: 0px 8px 12px 1px var(--gris);
   min-width: 10rem;
   max-width: 15rem;
   width: 35%;
@@ -685,7 +678,9 @@ button {
   transform: rotate(1turn);
 } /*animation check-box - Fin*/
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) /*responsive Tablette*/
+{
 
 .heart-menu {
   position: relative;
@@ -698,7 +693,7 @@ button {
 
 /* Index*/
 
-/* number title fonctionnement */
+/* numérotation dans fonctionnement */
 span {
   top: 33%;
   left: -2%;
@@ -714,7 +709,7 @@ span {
   padding-left: 60px;
 }
 
-/* modification des propriété du titre H2 du contairer cartes restaurant */
+/* modification des propriétés du titre H2 du contairer cartes restaurant */
 
 .container-restaurant h2 {
   margin-left: 30px;
@@ -755,7 +750,7 @@ span {
 }
 
 .container-card a {
-    width: 90%;
+  width: 90%;
 }
 .container-restaurant {
   padding-top: 0px;
@@ -861,7 +856,11 @@ footer ul {
   position: relative;
 }
 
-/* Fiche Menu*/
+.heart-index .heart-invisible:hover {
+  opacity: 1;
+}
+
+/* Fiches Menus*/
 
 .heart-menu .fa-heart {
   right: 40px;
@@ -895,8 +894,8 @@ footer ul {
 .entree_title_menu,
 .plat_title_menu,
 .dessert_title_menu {
-text-align: unset;
-margin: 0 20px 0 20px;
+  text-align: unset;
+  margin: 0 20px 0 20px;
 }
 
 .container-carte {
@@ -916,11 +915,11 @@ footer img {
 }
 
 footer ul {
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: row;
-gap: 2rem;
-margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  margin: auto;
 } 
 }
