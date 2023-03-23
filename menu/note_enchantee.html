@@ -11,152 +11,157 @@
 
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style">
     <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
-    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="preload" href="../css/style.css" as="style">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="menu-header">
         <a href="../index.html">
             <i class="fa-solid fa-arrow-left"></i>
             <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
         </a>
     </header>
 
-    <main>
-        <header>
+    <main class="main-menu">
+        <header class="streamer-menu">
             <img src="../images/restaurants/La_note_enchantee.jpg" alt="La note enchantée">
         </header>
 
-        <article>
-                <h1>La palette du goût <i class="fa-regular fa-heart"></i></h1>
-
-            <section>
-                <h2>Entrées</h2> 
-                <ul>
-                    <li>
-                        <div>
-                            <h3>Ravioles de foie gras</h3>
-                            <p>Accompagnés de leur crème à la truffe<p>
-                        </div>
-                        <div>
+        <article class="custom-background">
+                <h1 class="resto-name">La note enchantée</h1>
+                <figure class="heart-menu">
+                    <i class="fa-regular fa-heart heart-visible"></i>
+                    <i class="fa-solid fa-heart heart-invisible"></i>
+                </figure>
+            <div class="container-carte">
+                <section class="gradual_menu_entrees">
+                    <h2 class="entree_title_menu">ENTRÉES</h2> 
+                    <ul class="entree_container">
+                        <li class="label_entree">
+                            <div class="menu-container">
+                                <h3 class="entrees_name">Ravioles de foie gras</h3>
+                                <p class="Accompagnement_entrees">Accompagnés de leur crème à la truffe<p>
+                            </div>
                             <b>25€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Caviar osciètre</h3>
-                            <p>Sur blini à la farine de blé noir</p>
-                        </div>
-                        <div>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li class="label_entree">
+                            <div class="menu-container">
+                                <h3 class="entrees_name">Caviar osciètre</h3>
+                                <p class="Accompagnement_entrees">Sur blini à la farine de blé noir</p>
+                            </div>
                             <b>35€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Homard et espuma de potiron</h3>
-                            <p>Mariné aux zestes d'orange</p>
-                        </div>
-                        <div>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li class="label_entree">
+                            <div class="menu-container">
+                                <h3 class="entrees_name">Homard et espuma de potiron</h3>
+                                <p class="Accompagnement_entrees">Mariné aux zestes d'orange</p>
+                            </div>
                             <b>20€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Foie gras de canard cuit entier</h3>
-                            <p>Confiture de figue et pain toasté</p>
-                        </div>
-                        <div>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li class="label_entree">
+                            <div class="menu-container">
+                                <h3 class="entrees_name">Foie gras de canard cuit entier</h3>
+                                <p class="Accompagnement_entrees">Confiture de figue et pain toasté</p>
+                            </div>
                             <b>35€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
 
-            <section>
-                <h2>Plats</h2>
-                <ul>
-                    <li>
-                        <div>
-                            <h3>Noix de coquilles Saint-Jacques</h3>
-                            <p>Sur lit de purée de céleri-rave</p>
-                        </div>
-                        <div>
+                <section class="gradual_menu_plats_La_note_enchantee">
+                    <h2 class="plat_title_menu">PLATS</h2>
+                    <ul class="plat_container">
+                        <li class="label_plat">
+                            <div class="menu-container">
+                                <h3 class="plat_name">Noix de coquilles Saint-Jacques</h3>
+                                <p class="Accompagnement_plat">Sur lit de purée de céleri-rave</p>
+                            </div>
                             <b>40€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Langoustine poêlée</h3>
-                            <p>Purée de patate douce</p>
-                        </div>
-                        <div>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li class="label_plat">
+                            <div class="menu-container">
+                                <h3 class="plat_name">Langoustine poêlée</h3>
+                                <p class="Accompagnement_plat">Purée de patate douce</p>
+                            </div>
                             <b>35€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Mijoté de queue de boeuf</h3>
-                            <p>Et riz sauvage aux zestes de citron</p>
-                        </div>
-                        <div>
-                            <b>44€</strong></b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li class="label_plat">
+                            <div class="menu-container">
+                                <h3 class="plat_name">Mijoté de queue de boeuf</h3>
+                                <p class="Accompagnement_plat">Et riz sauvage aux zestes de citron</p>
+                            </div>
+                            <b>44€</b>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
 
-            <section>
-                <h2>Desserts</h2>
-                <ul>
-                    <li>
-                        <div>
-                            <h3>Macaron noisette et chocolat</h3>
-                            <p>Glace au caramel brun et sel de Guérande</p>
-                        </div>
-                        <div>
+                <section class="gradual_menu_desserts_La_note_enchantee">
+                    <h2 class="dessert_title_menu">DESSERTS</h2>
+                    <ul class="dessert_container">
+                        <li class="label_dessert">
+                            <div class="menu-container">
+                                <h3 class="dessert_name">Macaron noisette et chocolat</h3>
+                                <p class="Accompagnement_dessert">Glace au caramel brun et sel de Guérande</p>
+                            </div>
                             <b>18€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Baba au rhum revisité</h3> 
-                            <p>Avec son coulis de citron</p>
-                        </div>
-                        <div>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li class="label_dessert">
+                            <div class="menu-container">
+                                <h3 class="dessert_name">Baba au rhum revisité</h3> 
+                                <p class="Accompagnement_dessert">Avec son coulis de citron</p>
+                            </div>
                             <b>22€</b>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Tarte au citron meringuée</h3>
-                            <p>Déstructurée</p>
-                        </div>
-                        <div>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                        <li class="label_dessert">
+                            <div class="menu-container">
+                                <h3 class="dessert_name">Tarte au citron meringuée</h3>
+                                <p class="Accompagnement_dessert">Déstructurée</p>
+                            </div>
                             <b>23€</b>
-                            <i class="fa-solid fa-check"></i>
-                     </div>
-                    </li>
-                </ul>
-            </section>
+                            <div class="check-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </article>
 
-        <button type="button">
+        <button class="button_commander" type="button">
             Commander
         </button>
     </main>

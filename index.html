@@ -22,6 +22,11 @@
 </head>
 
 <body>
+
+    <div class="lauch_loader">
+        <div class="spin_loader"></div>
+    </div>
+
     <header class="header-logo">
         <img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
     </header>
@@ -34,24 +39,24 @@
     <section class="description">
         <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurant d'exeption, sélectionés par nos soins</p>
-        <button type="button">Explorer nos restaurants</button>
+        <button class="button_description" type="button">Explorer nos restaurants</button>
     </section>
 
     <main>
         <section class="functioning">
             <h2>Fonctionnement</h2>
             <ul>
-                <li>
+                <li class="choice">
                     <span>1</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p class="functioning-text">Choisissez un restaurant</p>
                 </li>
-                <li>
+                <li class="choice">
                     <span>2</span>
                     <i class="fa-solid fa-bars"></i>
                     Composez votre menu
                 </li>
-                <li>
+                <li class="choice">
                     <span>3</span>
                     <i class="fa-solid fa-store"></i>
                     Dégustez au restaurant
@@ -67,11 +72,12 @@
                     <figure class="restaurant-card">
                         <img class="image" src="./images/restaurants/La_palette_du_gout.jpg" alt="la palette du goût">
                         <p class="tag-card">Nouveau</p>
-                        <figcaption class="restaurant-card-text">
+                        <figcaption>
                             <h3 class="card-restaurant">La palette du goût</h3>
                             <p class="location-restaurant">Menilmontant</p>
-                            <figure>
-                                <i class="fa-regular fa-heart"></i>
+                            <figure class="heart-index">
+                                <i class="fa-regular fa-heart heart-visible"></i>
+                                <i class="fa-solid fa-heart heart-invisible"></i>
                             </figure>
                         </figcaption>
                     </figure>
@@ -84,8 +90,9 @@
                         <figcaption>
                             <h3 class="card-restaurant">La note enchantée</h3>
                             <p class="location-restaurant">Charonne</p>
-                            <figure>
-                                <i class="fa-regular fa-heart"></i>
+                            <figure class="heart-index">
+                                <i class="fa-regular fa-heart heart-visible"></i>
+                                <i class="fa-solid fa-heart heart-invisible"></i>
                             </figure>
                         </figcaption>
                     </figure>
@@ -97,8 +104,9 @@
                         <figcaption>
                             <h3 class="card-restaurant">À la Française</h3>
                             <p class="location-restaurant">Cité Rouge</p>
-                            <figure>
-                                <i class="fa-regular fa-heart"></i>
+                            <figure class="heart-index">
+                                <i class="fa-regular fa-heart heart-visible"></i>
+                                <i class="fa-solid fa-heart heart-invisible"></i>
                             </figure>
                         </figcaption>
                     </figure>
@@ -110,13 +118,16 @@
                         <figcaption>
                             <h3 class="card-restaurant">Le délice des sens</h3>
                             <p class="location-restaurant">Folie-Méricourt</p>
-                            <figure>
-                                <i class="fa-regular fa-heart"></i>
+                            <figure class="heart-index">
+                                <i class="fa-regular fa-heart heart-visible"></i>
+                                <i class="fa-solid fa-heart heart-invisible"></i>
                             </figure>
                         </figcaption>
                     </figure>
                 </a>
+
             </figure>
+
         </section>
     </main>
 
